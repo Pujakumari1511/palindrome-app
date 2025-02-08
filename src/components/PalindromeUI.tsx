@@ -1,5 +1,5 @@
 import { useState } from "react";
-import './pelindrome.css'
+import './palindrome.css'
 
 export const PalindromeUI = () => {
 
@@ -34,7 +34,7 @@ export const PalindromeUI = () => {
             <form className={"form-container"} onSubmit={handleSubmit} >
                 <input name="inputValue" type="text" value={inputValue} onChange={handleChange}/>
                 <div>
-                    <button type="submit">Check Pelindrome</button>
+                    <button type="submit">Check Palindrome</button>
                 </div>  
                 {inputText &&  
                     <p>{`${inputText} is ${isPalindrome ? '' : 'not'} palindrome`}</p>} 
