@@ -1,50 +1,45 @@
-# React + TypeScript + Vite
+# Palindrome Checker
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
 
-Currently, two official plugins are available:
+This is a simple React-based application that allows users to check a given word is a palindrome or not.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+- User can input a word in the text field.
+- The app checks if the word is a palindrome.
+- Displays a message indicating whether the word is a palindrome or not.
+- Message disappears after 3 seconds.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Installation
 
-- Configure the top-level `parserOptions` property like this:
+1. Clone this repository:
+   ```sh
+   git clone https://github.com/your-repo/palindrome-checker.git
+   ```
+2. Navigate to the project directory:
+   ```sh
+   cd palindrome-checker
+   ```
+3. Install dependencies:
+   ```sh
+   npm install
+   ```
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## Usage
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+1. Start the development server:
+   ```sh
+   npm start
+   ```
+2. Open your browser and go to:
+   ```
+   http://localhost:5173
+   ```
+3. Enter a word in the input field and press the "Check Palindrome" button.
+4. The result will be displayed below the input field and will disappear after 3 seconds.
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+## Technologies Used
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+- React (with TypeScript)
+- CSS for styling
